@@ -1,0 +1,25 @@
+/* FONT LOAD */
+@font-face {
+  font-family: "zalando";
+  src: url("./assets/font/ZalandoSansExpanded-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  /* for variable font */
+  font-style: normal;
+}
+
+/* GLOBAL APPLY */
+html,
+body {
+  font-family: "zalando", sans-serif;
+}
+
+/* index.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
