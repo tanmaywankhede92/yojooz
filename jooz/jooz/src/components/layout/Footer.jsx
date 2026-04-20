@@ -125,21 +125,41 @@ function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h4 className="text-2xl font-bold text-[#1d1d1d]">Contact Info</h4>
-            <ul className="mt-5 space-y-4 text-base text-[#1d1d1d]">
-              <li>Nagpur, Maharashtra, India</li>
-              <li>
-                <a
-                  href="https://wa.me/919370364437?text=Hello%20YoJooz%2C%20I%20want%20to%20know%20more%20about%20installing%20your%20juice%20machine."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition hover:text-[#25D366]"
-                >
-                  +91 93703 64437
-                </a>
-              </li>
-            </ul>
+          <div className="max-w-md">
+            <h4 className="text-2xl font-bold text-[#1d1d1d] mb-6">
+              Contact Info
+            </h4>
+
+            {/* Address */}
+            <div className="mb-6">
+              <p className="text-sm font-semibold text-[#f08b13] mb-1">
+                Address
+              </p>
+              <p className="text-base text-[#1d1d1d] leading-relaxed">
+                106, Rajdhani Palace,
+                <br />
+                Opp. Indian Oil Petrol Pump,
+                <br />
+                Telephone Exchange Square,
+                <br />
+                Gangabai Ghat Road,
+                <br />
+                Nagpur – 440008
+              </p>
+            </div>
+
+            {/* Phone */}
+            <div>
+              <p className="text-sm font-semibold text-[#f08b13] mb-1">Phone</p>
+              <a
+                href="https://wa.me/919370364437?text=Hello%20YoJooz%2C%20I%20want%20to%20know%20more%20about%20installing%20your%20juice%20machine."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base text-[#1d1d1d] hover:text-[#25D366] transition"
+              >
+                +91 93703 64437
+              </a>
+            </div>
           </div>
         </div>
 
