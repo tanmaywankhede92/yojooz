@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <header className="w-full bg-[#f7f5f1]">
       <div className="mx-auto w-full overflow-hidden bg-white px-4 sm:px-6 lg:px-10 border-b border-black/10">
-        <div className="flex h-[78px] items-center justify-between">
+        <div className="flex h-[78px] items-center justify-between px-1 lg:px-8">
           <NavLink to="/" className="flex items-center">
             <img
               src={logo}
@@ -71,8 +71,8 @@ function Navbar() {
         </div>
 
         {isOpen && (
-          <div className="border-t border-black/10 py-4 md:hidden">
-            <nav className="flex flex-col gap-4">
+          <div className="border-t border-black/10 py-4 md:hidden ">
+            <nav className="flex flex-col gap-4 items-center text-center">
               {navItems.map((item) => (
                 <NavLink
                   key={item.label}
