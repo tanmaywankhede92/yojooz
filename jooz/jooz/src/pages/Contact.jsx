@@ -19,7 +19,7 @@ function ContactSection() {
             Contact Us
           </p>
 
-          <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-[#171717] sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-extrabold leading-tight -tracking-[-0.06em] text-[#171717] sm:text-4xl lg:text-5xl">
             Let’s Bring Fresh Juice
             <br className="hidden sm:block" />
             Closer to Your Customers
@@ -50,12 +50,14 @@ function ContactSection() {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h4 className="text-base font-bold text-[#171717]">
-                    Address
-                  </h4>
-                  <ul className="mt-2 space-y-1 text-[#5d5753]">
-                    <li>Nagpur, Maharashtra, India</li>
-                  </ul>
+                  <h3 className="text-lg font-bold text-[#1d1d1d]">Address</h3>
+                  <p className="text-base text-[#1d1d1d] leading-relaxed">
+                    106, Rajdhani Palace, Opp. Indian Oil Petrol Pump,
+                    <br />
+                    Telephone Exchange Square, Gangabai Ghat Road,
+                    <br />
+                    Nagpur – 440008
+                  </p>
                 </div>
               </div>
 

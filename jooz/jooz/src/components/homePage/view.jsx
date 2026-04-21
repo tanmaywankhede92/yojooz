@@ -147,7 +147,7 @@ function NatureSection() {
 
                 <div>
                   <h3 className="text-3xl font-extrabold text-[#25b20f] sm:text-4xl lg:text-5xl">
-                    0%
+                    No
                   </h3>
                   <p className="mt-3 text-2xl font-bold leading-tight text-[#2a2a2a] sm:mt-4 sm:text-3xl lg:text-4xl">
                     Added Sugar
@@ -194,8 +194,12 @@ function ContactSection() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-[#1d1d1d]">Address</h3>
-                <p className="mt-1 text-[#5d5753]">
-                  Nagpur, Maharashtra, India
+                <p className="text-base text-[#1d1d1d] leading-relaxed">
+                  106, Rajdhani Palace, Opp. Indian Oil Petrol Pump,
+                  <br />
+                  Telephone Exchange Square, Gangabai Ghat Road,
+                  <br />
+                  Nagpur – 440008
                 </p>
               </div>
             </div>
