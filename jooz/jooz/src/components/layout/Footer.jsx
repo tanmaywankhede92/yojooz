@@ -131,7 +131,7 @@ function Footer() {
             </h4>
 
             {/* Address */}
-            <div className="mb-6">
+            <div className="mb-2">
               <p className="text-sm font-semibold text-[#f08b13] mb-1">
                 Address
               </p>
@@ -159,6 +159,14 @@ function Footer() {
               >
                 +91 93703 64437
               </a>
+            </div>
+
+            {/* Email */}
+            <div className="mt-3">
+              <p className="text-sm font-semibold text-[#f08b13] mb-1">Email</p>
+              <p className="text-base text-[#1d1d1d] leading-relaxed">
+                info@yojooz.in
+              </p>
             </div>
           </div>
         </div>

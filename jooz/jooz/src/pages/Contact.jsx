@@ -88,7 +88,7 @@ function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-[#171717]">Email</h4>
-                  <p className="mt-2 text-[#5d5753]">hello@yojooz.com</p>
+                  <p className="mt-2 text-[#5d5753]">info@yojooz.in</p>
                 </div>
               </div>
 
@@ -146,7 +146,7 @@ function ContactSection() {
               <p className="text-sm leading-7 text-[#5d5753] sm:text-base">
                 Prefer email instead? Write to us at{" "}
                 <span className="font-semibold text-[#171717]">
-                  hello@yojooz.com
+                  info@yojooz.in
                 </span>
               </p>
             </div>
