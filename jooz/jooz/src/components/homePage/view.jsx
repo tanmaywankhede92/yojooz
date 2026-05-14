@@ -7,7 +7,9 @@ import university from "../../assets/machineImg/college.jpeg";
 import bg from "../../assets/view.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { MessageCircle, Phone, MapPin } from "lucide-react";
-
+import nearestKioskImg from "../../assets/pricing/nearest-kiosk.jpeg";
+import placeOrderImg from "../../assets/pricing/place-order.jpeg";
+import enjoyDrinkImg from "../../assets/pricing/enjoy-drink.jpeg";
 const spaces = [
   {
     id: 1,
@@ -164,6 +166,64 @@ function NatureSection() {
   );
 }
 
+function PricingSection() {
+  const steps = [
+    {
+      id: 1,
+      title: "Find nearest YoJooz kiosk",
+      image: nearestKioskImg,
+      alt: "Find nearest kiosk",
+    },
+    {
+      id: 2,
+      title: "Place your order",
+      image: placeOrderImg,
+      alt: "Place your order",
+    },
+    {
+      id: 3,
+      title: "Enjoy @ Rs.120/-",
+      image: enjoyDrinkImg,
+      alt: "Enjoy fresh juice",
+      badge: "Rs. 120",
+    },
+  ];
+
+  return (
+    <section className="bg-[#f6f3ee] px-4 py-12 sm:px-6 md:px-10 lg:px-16 lg:py-20">
+      <div className="mx-auto max-w-7xl rounded-[28px] bg-[#ece6dd] px-5 py-10 sm:px-8 lg:px-12 lg:py-14">
+        <h2 className="text-center text-2xl font-extrabold leading-tight text-[#1f1f1f] sm:text-3xl md:text-4xl lg:text-5xl">
+          Your next steps towards a{" "}
+          <span className="text-[#e88411]">YoJooz</span>ful life
+        </h2>
+
+        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {steps.map((step) => (
+            <div key={step.id} className="group">
+              <div className="relative overflow-hidden rounded-[24px] bg-white shadow-sm">
+                {step.badge && (
+                  <div className="absolute right-3 top-3 z-10 rounded-lg bg-white px-3 py-2 text-xs font-bold text-[#1f1f1f] shadow">
+                    {step.badge}
+                  </div>
+                )}
+
+                <img
+                  src={step.image}
+                  alt={step.alt}
+                  className="h-[260px] w-full object-cover transition duration-300 group-hover:scale-105 sm:h-[320px] lg:h-[380px]"
+                />
+              </div>
+
+              <h3 className="mt-4 text-center text-xl font-bold text-[#1f1f1f] sm:text-2xl">
+                {step.title}
+              </h3>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 function ContactSection() {
   const whatsappLink =
     "https://wa.me/919370364437?text=Hello%20YoJooz%2C%20I%20want%20to%20know%20more%20about%20your%20juice%20machine.%20Please%20share%20details.";
@@ -288,6 +348,7 @@ export default function View() {
     <>
       <NatureSection />
       <LocationSection />
+      <PricingSection />
       <ContactSection />
     </>
   );

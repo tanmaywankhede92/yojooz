@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { policyContent } from "../data/policyData";
+import PolicyModal from "../data/PolicyModal";
 
 function Footer() {
   const year = new Date().getFullYear();
+  const [activeModal, setActiveModal] = useState(null);
 
   <NavLink
     to="/about"
@@ -46,8 +49,8 @@ function Footer() {
         <div className="grid gap-10 px-10 py-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="text-4xl font-extrabold tracking-tight text-[#f08b13]">
-              YoJooz
+            <h3 className="text-2xl font-extrabold tracking-normal text-[#f08b13]">
+              YOJOOZ
             </h3>
             <p className="mt-4 max-w-xs text-base leading-9 text-[#5d5753]">
               Freshly squeezed juice vending machines designed for high-footfall
@@ -126,9 +129,12 @@ function Footer() {
 
           {/* Contact Info */}
           <div className="max-w-md">
-            <h4 className="text-2xl font-bold text-[#1d1d1d] mb-6">
+            <h4 className="text-2xl font-bold text-[#1d1d1d] mb-3">
               Contact Info
             </h4>
+            <p className="text-md font-bold text-[#f08b13] mb-2">
+              YOJOOZ SALES AND SERVICE
+            </p>
 
             {/* Address */}
             <div className="mb-2">
@@ -172,7 +178,7 @@ function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#eee7df] px-10 py-5">
+        {/* <div className="border-t border-[#eee7df] px-10 py-5">
           <div className="flex flex-col gap-3 text-sm text-[#6a645f] md:flex-row md:items-center md:justify-between">
             <p>© {year} YoJooz. All rights reserved</p>
 
@@ -191,7 +197,44 @@ function Footer() {
               </Link>
             </div>
           </div>
+        </div> */}
+        <div className="border-t border-[#eee7df] px-10 py-5">
+          <div className="flex flex-col gap-3 text-sm text-[#6a645f] md:flex-row md:items-center md:justify-between">
+            <p>© {year} YoJooz. All rights reserved</p>
+
+            <div className="flex gap-6">
+              <button
+                type="button"
+                onClick={() => setActiveModal("privacy")}
+                className="transition hover:text-[#28b10f]"
+              >
+                Privacy Policy
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setActiveModal("terms")}
+                className="transition hover:text-[#28b10f]"
+              >
+                Terms & Conditions
+              </button>
+            </div>
+          </div>
         </div>
+
+        <PolicyModal
+          isOpen={activeModal === "privacy"}
+          title={policyContent.privacy.title}
+          sections={policyContent.privacy.sections}
+          onClose={() => setActiveModal(null)}
+        />
+
+        <PolicyModal
+          isOpen={activeModal === "terms"}
+          title={policyContent.terms.title}
+          sections={policyContent.terms.sections}
+          onClose={() => setActiveModal(null)}
+        />
       </div>
     </footer>
   );
