@@ -205,6 +205,13 @@ function Footer() {
             <div className="flex gap-6">
               <button
                 type="button"
+                onClick={() => setActiveModal("refund")}
+                className="transition hover:text-[#28b10f]"
+              >
+                Refund
+              </button>
+              <button
+                type="button"
                 onClick={() => setActiveModal("privacy")}
                 className="transition hover:text-[#28b10f]"
               >
@@ -233,6 +240,13 @@ function Footer() {
           isOpen={activeModal === "terms"}
           title={policyContent.terms.title}
           sections={policyContent.terms.sections}
+          onClose={() => setActiveModal(null)}
+        />
+
+        <PolicyModal
+          isOpen={activeModal === "refund"}
+          title={policyContent.refund.title}
+          sections={policyContent.refund.sections}
           onClose={() => setActiveModal(null)}
         />
       </div>

@@ -86,4 +86,35 @@ export const policyContent = {
       },
     ],
   },
+  refund: {
+    title: "Refund Policy",
+    sections: [
+      {
+        heading: "Refund Policy",
+        points: [
+          "YoJooz aims to provide high-quality products, services, and customer support across all machine installations and business interactions.",
+          "Refund eligibility may vary depending on the nature of the service, partnership, installation agreement, or transaction involved.",
+          "Payments made for confirmed machine bookings, installations, partnerships, branding, or promotional activities may be non-refundable unless otherwise agreed in writing.",
+          "In case of duplicate payments or billing errors, users may contact the YoJooz team for verification and processing of eligible refunds.",
+          "Refund requests must be submitted through official communication channels, including email or WhatsApp support, along with relevant payment details and proof of transaction.",
+          "YoJooz reserves the right to review and verify all refund requests before approval.",
+          "Approved refunds, if applicable, will be processed within a reasonable timeframe depending on banking or payment provider procedures.",
+          "Refund timelines may vary based on the payment method used during the transaction.",
+          "YoJooz shall not be responsible for delays caused by banks, payment gateways, or third-party financial service providers.",
+        ],
+        subPoints: [
+          "Change of mind after confirmation",
+          "Delays caused by incorrect information provided by the customer",
+          "Services already completed or delivered",
+          "Third-party charges or transaction fees",
+        ],
+        extraPoints: [
+          "In cases involving technical issues, service interruptions, or operational concerns, YoJooz may choose to provide support, replacements, adjustments, or alternative resolutions instead of direct refunds.",
+          "Any disputes related to refunds shall be subject to review and final decision by the YoJooz management team.",
+          "YoJooz reserves the right to update or modify this Refund Policy at any time without prior notice.",
+          "Continued use of YoJooz services or website shall be considered acceptance of the latest Refund Policy.",
+        ],
+      },
+    ],
+  },
 };
