@@ -5,11 +5,22 @@ import transitHub from "../../assets/machineImg/Airport.jpeg";
 import shoppingMall from "../../assets/machineImg/Mall.jpeg";
 import university from "../../assets/machineImg/college.jpeg";
 import bg from "../../assets/view.png";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { MessageCircle, Phone, MapPin } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  MessageCircle,
+  Phone,
+  MapPin,
+  Star,
+  Check,
+  ShoppingCart,
+  Plus,
+  Minus,
+} from "lucide-react";
 import nearestKioskImg from "../../assets/pricing/nearest-kiosk.jpeg";
 import placeOrderImg from "../../assets/pricing/place-order.jpeg";
 import enjoyDrinkImg from "../../assets/pricing/enjoy-drink.jpeg";
+import cup from "../../assets/cup.png";
 const spaces = [
   {
     id: 1,
@@ -160,6 +171,71 @@ function NatureSection() {
           </div>
 
           <div className="pointer-events-none absolute bottom-[10%] left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-[#ffb100]/20 blur-3xl sm:h-36 sm:w-36 lg:bottom-[12%] lg:h-56 lg:w-56" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProductSection() {
+  const product = {
+    title: "Freshly Squeezed Orange Juice",
+    variant: "Classic",
+    description:
+      "Made from real oranges and squeezed fresh directly into your glass for the purest taste and nutrition. 100% Natural Fruit Squeezed in the Glass with No Added Sugar, no preservatives, and no artificial ingredients. Enjoy a refreshing, healthy, and hygienic juice experience with every sip.",
+    price: "₹ 120",
+    image: cup,
+
+    features: ["100% Natural", "No Added Sugar", "Freshly Squeezed"],
+  };
+
+  return (
+    <section className="px-4 py-12 sm:px-6 md:px-10 lg:px-16 lg:py-20">
+      <div className="mx-auto max-w-7xl">
+        <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-r from-[#fffaf0] to-[#fff6ea] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div className="flex justify-center lg:justify-center">
+              <div className="overflow-hidden rounded-2xl   ">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="h-[420px] w-full object-cover sm:h-[480px] lg:h-[520px] shadow-xl"
+                />
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-4">
+                <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-[#28b10f]">
+                  Product
+                </p>
+              </div>
+
+              <h2 className="mt-3 text-3xl font-extrabold text-black sm:text-4xl">
+                {product.title}
+              </h2>
+
+              <div className="mt-4 flex items-center ">
+                <div className="h-1 w-px bg-[#e6e2dd]" />
+                <div className="text-sm text-[#5d5753]">Ready in 30s</div>
+              </div>
+
+              <p className="mt-1 text-base text-[#1f1f1f] leading-relaxed">
+                {product.description}
+              </p>
+
+              <div className="mt-6 flex items-center gap-6">
+                <div>
+                  <div className="text-3xl font-bold text-[#1f1f1f]">
+                    {product.price}
+                    <span className="text-sm text-[#5d5753]">/cup</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pointer-events-none absolute -right-24 -top-24 h-56 w-56 rounded-full bg-[#ffb100]/10 blur-3xl" />
         </div>
       </div>
     </section>
@@ -347,6 +423,7 @@ export default function View() {
   return (
     <>
       <NatureSection />
+      <ProductSection />
       <LocationSection />
       <PricingSection />
       <ContactSection />

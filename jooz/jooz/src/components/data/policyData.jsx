@@ -84,6 +84,21 @@ export const policyContent = {
           "By browsing, accessing, or interacting with this website, users acknowledge that they have read, understood, and agreed to these Terms & Conditions.",
         ],
       },
+      {
+        heading: " Shipping & Delivery Terms",
+        points: [
+          "YoJooz primarily provides vending machine installations, business partnerships, and related services. Any physical products, promotional materials, spare parts, or equipment supplied by YoJooz are subject to availability and delivery schedules.",
+          "Delivery timelines provided by YoJooz are estimates and may vary depending on location, logistics, weather conditions, supplier availability, or other unforeseen circumstances.",
+          "Customers are responsible for providing accurate delivery and installation details, including location access requirements and contact information.",
+          "Any delays resulting from incorrect information, restricted site access, or customer-related issues may affect delivery schedules and installation timelines.",
+          "Risk and responsibility for delivered items shall transfer to the customer upon successful delivery, installation, or handover, unless otherwise agreed in writing.",
+          "YoJooz shall not be liable for delays caused by third-party logistics providers, transportation disruptions, government restrictions, natural disasters, or events beyond reasonable control.",
+          "Additional delivery, transportation, handling, or installation charges may apply for remote locations or special site requirements and will be communicated in advance where applicable.",
+          "Any changes to delivery schedules or installation dates requested by the customer may be subject to operational availability and additional charges.",
+          "YoJooz reserves the right to modify shipping, delivery, and installation procedures as necessary to ensure service quality and operational efficiency.",
+          "By placing an order, requesting installation, or engaging with YoJooz services, customers acknowledge and agree to these Shipping & Delivery Terms.",
+        ],
+      },
     ],
   },
   refund: {
