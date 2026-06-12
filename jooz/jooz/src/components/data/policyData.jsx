@@ -88,6 +88,7 @@ export const policyContent = {
         heading: " Shipping & Delivery Terms",
         points: [
           "YoJooz primarily provides vending machine installations, business partnerships, and related services. Any physical products, promotional materials, spare parts, or equipment supplied by YoJooz are subject to availability and delivery schedules.",
+          "Orders for physical products will generally be processed and delivered within 7–10 business days from the date of order confirmation, subject to product availability and delivery location.",
           "Delivery timelines provided by YoJooz are estimates and may vary depending on location, logistics, weather conditions, supplier availability, or other unforeseen circumstances.",
           "Customers are responsible for providing accurate delivery and installation details, including location access requirements and contact information.",
           "Any delays resulting from incorrect information, restricted site access, or customer-related issues may affect delivery schedules and installation timelines.",
@@ -97,6 +98,37 @@ export const policyContent = {
           "Any changes to delivery schedules or installation dates requested by the customer may be subject to operational availability and additional charges.",
           "YoJooz reserves the right to modify shipping, delivery, and installation procedures as necessary to ensure service quality and operational efficiency.",
           "By placing an order, requesting installation, or engaging with YoJooz services, customers acknowledge and agree to these Shipping & Delivery Terms.",
+        ],
+      },
+      {
+        heading: "Contact Information",
+        points: [
+          <>
+            <strong>Company Name:</strong> YoJooz
+          </>,
+          <>
+            <strong>Address:</strong> 106, Rajdhani Palace, Opp. Indian Oil
+            Petrol Pump, Telephone Exchange Square, Gangabai Ghat Road, Nagpur –
+            440008, Maharashtra, India
+          </>,
+          <>
+            <strong>Phone:</strong>{" "}
+            <a
+              href="tel:+919370364437"
+              className="text-blue-600 font-semibold hover:underline"
+            >
+              +91 93703 64437
+            </a>
+          </>,
+          <>
+            <strong>Email:</strong>{" "}
+            <a
+              href="mailto:info@yojooz.in"
+              className="text-blue-600 font-semibold hover:underline"
+            >
+              info@yojooz.in
+            </a>
+          </>,
         ],
       },
     ],
@@ -113,7 +145,7 @@ export const policyContent = {
           "In case of duplicate payments or billing errors, users may contact the YoJooz team for verification and processing of eligible refunds.",
           "Refund requests must be submitted through official communication channels, including email or WhatsApp support, along with relevant payment details and proof of transaction.",
           "YoJooz reserves the right to review and verify all refund requests before approval.",
-          "Approved refunds, if applicable, will be processed within a reasonable timeframe depending on banking or payment provider procedures.",
+          "Once approved, the refund amount will be credited to the customer's original payment method within 7 business days, subject to banking and payment provider processing times.",
           "Refund timelines may vary based on the payment method used during the transaction.",
           "YoJooz shall not be responsible for delays caused by banks, payment gateways, or third-party financial service providers.",
         ],

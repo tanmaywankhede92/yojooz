@@ -46,7 +46,7 @@ function Footer() {
         </div>
 
         {/* Main Footer */}
-        <div className="grid gap-10 px-10 py-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 px-10 py-12 md:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-extrabold tracking-normal text-[#f08b13]">
@@ -117,7 +117,7 @@ function Footer() {
           </div>
 
           {/* Best For */}
-          <div>
+          {/* <div>
             <h4 className="text-2xl font-bold text-[#1d1d1d]">Best For</h4>
             <ul className="mt-5 space-y-4 text-base text-[#1d1d1d]">
               <li>Gyms & Fitness Centers</li>
@@ -125,7 +125,7 @@ function Footer() {
               <li>Shopping Malls</li>
               <li>Universities & Campuses</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div className="max-w-md">
